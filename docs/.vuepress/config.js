@@ -14,12 +14,12 @@ module.exports = {
       { text: "关于", link: "/resume/" },
       { text: "Github", link: "https://www.github.com/Caoyt688" }
     ],
-    sidebar: {
-      "/dotnet/": ["hello", "dotnet1"],
-      "/web/": ["hello", "web1"]
-    },
-    sidebarDepth: 2,
-    lastUpdated: "Last Updated",
+    // sidebar: {
+    //   "/dotnet/": ["hello", "dotnet1"],
+    //   "/web/": ["hello", "web1"]
+    // },
+    // sidebarDepth: 2,
+    // lastUpdated: "Last Updated",
 
     
   },
