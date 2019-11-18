@@ -4,29 +4,50 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "主页", link: "/" },
-      {
-        text: "博文",
-        items: [
-          { text: ".Net", link: "/dotnet/" },
-          { text: "Web", link: "/web/" }
-        ]
-      },
+      { text: "系列博文", link: "/series/" },
+      { text: "技术随笔", link: "/essay/" },
       { text: "关于", link: "/resume/" },
       { text: "Github", link: "https://www.github.com/Caoyt688" }
     ],
-    // sidebar: {
-    //   "/dotnet/": ["hello", "dotnet1"],
-    //   "/web/": ["hello", "web1"]
-    // },
-    // sidebarDepth: 2,
-    // lastUpdated: "Last Updated",
-
-    
+    sidebar: {
+      "/series/": getSeriesSidebar("dotnet","web"),
+      "/essay/": ["test", "test1"]
+    },
+    sidebarDepth: 2,
+    lastUpdated: "Last Updated"
   },
   //pwa
   serviceWorker: true,
   markdown: {
-    lineNumbers: true, // 代码块显示行号
-    
-  },
+    lineNumbers: true // 代码块显示行号
+  }
 };
+
+function getSeriesSidebar(groupA, groupB) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: [
+        "hello",
+        // "directory-structure",
+        // "basic-config",
+        // "assets",
+        // "markdown",
+        // "using-vue",
+        // "i18n",
+        // "deploy"
+      ]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: [
+        "hello",
+        // "permalinks",
+        // "markdown-slot",
+        // "global-computed"
+      ]
+    }
+  ];
+}

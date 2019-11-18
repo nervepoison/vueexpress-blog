@@ -15,7 +15,8 @@ footer: Copyright © 2019-present Eric Cao
 
 ### 从哪里可以找到我？
 [QQ](tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=691717042&website=www.oicqzone.com)
-|
-[微信](www.baidu.com)
+
+<!-- ![微信]() -->
+<!-- [微信](../.vuepress/public/img/wx.jpg) -->
 ### 友链
-[百万梦想-程序员最好用的工具站](tools.100wan.site)
+[百万梦想-程序员最好用的工具站](https://tools.100wan.site)
